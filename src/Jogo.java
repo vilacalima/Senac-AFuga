@@ -1,14 +1,15 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Jogo {
 	private static Scanner input = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		String resposta, ver, escolha;
 //		Inicio do Jogo
 		resposta = Historia.historiaInicial();
 		System.out.println(resposta);
-//		Descrição e escolha dos personagens		
+//		Descriï¿½ï¿½o e escolha dos personagens		
 		resposta = Personagens.descricao();
 		System.out.println(resposta);
 
@@ -29,9 +30,9 @@ public class Jogo {
 			 * DesafioTres.desafioTres(personagem); DesafioQuatro.desafioQuatro(personagem);
 			 */
 			/* Desafio Cinco */
-		System.out.println("Parabéns você chegou na última fase...");
-		System.out.println("Ohh não os outros tripulantes descobriram que você está prestes a sair do navio, escolha uma das opições e sobreviva:");
-		System.out.println("Digite \"Correr\" para correr e deixar Giovanni para trás");
+		System.out.println("Parabï¿½ns vocï¿½ chegou na ï¿½ltima fase...");
+		System.out.println("Ohh nï¿½o os outros tripulantes descobriram que vocï¿½ estï¿½ prestes a sair do navio, escolha uma das opiï¿½ï¿½es e sobreviva:");
+		System.out.println("Digite \"Correr\" para correr e deixar Giovanni para trï¿½s");
 		System.out.println("Digite \"Ficar\" para ficar e lutar");
 		escolha = input.next();
 		
