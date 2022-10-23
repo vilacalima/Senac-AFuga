@@ -1,14 +1,15 @@
+package senac.algoritimosII.afuga;
 
 public class Personagens {
 
 	public static String descricao() {
 		String resposta;
 		
-		resposta = "Descrição de Classes do jogo \n \r"
-				+ "ASSASINO - PEDRO \n" + "PONTOS FORTES: \n" + "Habilidades com faca \n" + "Experiência no Mar \n"
-			    + "ILUSIONISTA - THIAGO \n" + "PONTOS FORTES \n" + "Mágico \n \r"
+		resposta = "Descriï¿½ï¿½o de Classes do jogo \n \r"
+				+ "ASSASINO - PEDRO \n" + "PONTOS FORTES: \n" + "Habilidades com faca \n" + "Experiï¿½ncia no Mar \n"
+			    + "ILUSIONISTA - THIAGO \n" + "PONTOS FORTES \n" + "Mï¿½gico \n \r"
 			    + "GUERREIRO - MATHEUS \n" + "PONTOS FORTES: \n" + "Atirador \n" + "Forte Fisicamente \n \r"
-			    + "CURANDEIRO - JONAS \n" + "PONTOS FORTES: \n" + "Mestre da Medicina \n" + "Raciocinio Rápido \n \r";
+			    + "CURANDEIRO - JONAS \n" + "PONTOS FORTES: \n" + "Mestre da Medicina \n" + "Raciocinio Rï¿½pido \n \r";
 
 		return resposta;
 	}

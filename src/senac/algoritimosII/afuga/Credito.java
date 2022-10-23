@@ -1,3 +1,4 @@
+package senac.algoritimosII.afuga;
 
 public class Credito {
 	
@@ -6,17 +7,17 @@ public static String credito(boolean conquista) {
 		if (conquista == true) {
 			resposta = "Mas e o que aconteceu com Giovanni ? \n\r"
 					+ "Calma, calma isso ï¿½ assunto para outro jogo... \n\r"
-					+ "Você ganhou!!!! \n\r"
-					+ "CRÉDITOS \n\r"
+					+ "Vocï¿½ ganhou!!!! \n\r"
+					+ "CRï¿½DITOS \n\r"
 					+ "Isabela Midori \n\r"
 					+ "Nathalia Aldinar \n\r"
 					+ "Nicolas Marques \n\r"
-					+ "Robson Vilaça \n\r"
+					+ "Robson Vilaï¿½a \n\r"
 					+ "Fim de jogo \n\r"; 
 		} 
 		if (conquista == false){
-			resposta = "Você perdeu o jogo! Mas não desista de se tornar um grande patrulheiro do mar, "
-					+ "na próxima você conseguirá!";
+			resposta = "Vocï¿½ perdeu o jogo! Mas nï¿½o desista de se tornar um grande patrulheiro do mar, "
+					+ "na prï¿½xima vocï¿½ conseguirï¿½!";
 		}
 		return resposta;
 	}

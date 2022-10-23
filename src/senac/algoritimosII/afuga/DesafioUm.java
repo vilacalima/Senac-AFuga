@@ -1,3 +1,4 @@
+package senac.algoritimosII.afuga;
 import java.util.Scanner;
 
 public class DesafioUm {
