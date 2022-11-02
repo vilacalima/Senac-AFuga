@@ -1,5 +1,7 @@
 package senac.algoritimosII.afuga;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -8,11 +10,15 @@ public class Jogo {
 
 	public static void main(String[] args) throws IOException {
 		String resposta, ver, escolha;
+		List<String> bolsa = new ArrayList<String>();
 		
 		/* Inicio do Jogo */
 		resposta = Historia.historiaInicial();
 		SalvarArquivo.gerarArquivo(resposta);
 		System.out.println("História gravada no arquivo");
+		
+		System.out.println(resposta);
+		
 		
 		/* Descrição e escolha dos personagens */	
 		resposta = Personagens.descricao();
@@ -25,7 +31,10 @@ public class Jogo {
 		System.out.println(resposta);
 				
 		ver = input.next().toUpperCase();
-		Bolsa.bolsa(personagem, ver, null);
+		bolsa = Bolsa.bolsa(personagem, ver, null);
+		System.out.println(bolsa);
+		
+		
 		
 		  // Desafios
 		  
@@ -34,6 +43,12 @@ public class Jogo {
 			 * DesafioTres.desafioTres(personagem); DesafioQuatro.desafioQuatro(personagem);
 			 */
 			/* Desafio Cinco */
+		
+		DesafioUm desafioUm = new DesafioUm();
+		
+		desafioUm.desafioUm(personagem);
+		
+		
 		resposta = Historia.historiaDesafioQuatro(personagem);
 		SalvarArquivo.gerarArquivo(resposta);
 		escolha = input.next().toUpperCase();

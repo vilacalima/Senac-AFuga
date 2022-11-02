@@ -23,13 +23,19 @@ public class Personagens {
 					"Digite \"ver\" para acessar a bolsa ";
 			 
 		} else if (personagem.equals("MATHEUS")) {
-			resposta = "Boa Escolha \n";
+			resposta = "Boa Escolha você escolheu o Matheus um guerrreiro forte" + 
+					"Cada personagem possui uma bolsa com itens \n"
+					+ "Digite \"ver\" para acessar a bolsa ";
 			
 		} else if (personagem.equals("THIAGO")) {
-			resposta = "Boa Escolha \n";
+			resposta = "Boa Escolha você escolheu o Thiago um guerrreiro forte" +
+					"Cada personagem possui uma bolsa com itens \n" + 
+					"Digite \"ver\" para acessar a bolsa ";
 			
 		} else if (personagem.equals("JONAS")) {
-			resposta = "Boa Escolha \n";
+			resposta = "Boa Escolha você escolheu o Jonas um guerrreiro forte\n" +
+					"Cada personagem possui uma bolsa com itens \n" + 
+					"Digite \"ver\" para acessar a bolsa ";
 			
 		} else {
 			resposta = "Opção errada isso vai te complicar no futuro";
