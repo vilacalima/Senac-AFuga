@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class DesafioUm {
 
 	private static Scanner input = new Scanner(System.in);
+	
 	public static void desafioUm(String personagem) {
 
 		String comando1 = null;
@@ -12,7 +13,7 @@ public class DesafioUm {
 		String comando4 = null;
 		String comando5 = null;
 		int tentativa = 0;
-
+		
 		do {
 
 			System.out.println("\n \n Ap�s a forte tempestade, voc� acorda e se d� conta do acontecido. "
