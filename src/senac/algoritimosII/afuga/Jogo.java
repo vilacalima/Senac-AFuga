@@ -44,9 +44,18 @@ public class Jogo {
 			 */
 			/* Desafio Cinco */
 		
+		
+		
+		
+		
 		DesafioUm desafioUm = new DesafioUm();
 		
-		desafioUm.desafioUm(personagem);
+		resposta = Historia.historiaDesafioUm();
+		System.out.println(resposta);
+		
+		desafioUm.parteUm();
+		desafioUm.parteDois(personagem);
+		desafioUm.parteTres();
 		
 		
 		resposta = Historia.historiaDesafioQuatro(personagem);
