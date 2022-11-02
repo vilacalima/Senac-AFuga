@@ -15,6 +15,17 @@ public class Historia {
 		return historia;
 	}
 	
+	public static String historiaDesafioUm() {
+		
+		historia = "Apos a forte tempestade, voce acorda e se da conta do acontecido. "
+				+ "\n Ainda deitado na cama, abre os olhos. Olha ao redor e ve o dormitorio todo revirado. "
+				+ "\n Voce tenta se mover, mas instantaneamente sente uma dor intensa. \n Para olhar ao seu redor, digite OLHAR";		
+		
+		return historia;
+		
+	}
+	
+	
 	public static String historiaDesafioQuatro(String personagem) throws IOException {
 		
 		historia = "Parabéns " + personagem + " você chegou na última fase... \r\n" 
