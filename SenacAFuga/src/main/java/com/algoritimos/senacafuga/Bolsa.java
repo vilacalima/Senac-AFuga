@@ -1,4 +1,4 @@
-package senac.algoritimosII.afuga;
+package com.algoritimos.senacafuga;
 import java.util.ArrayList;
 import java.util.List;
 

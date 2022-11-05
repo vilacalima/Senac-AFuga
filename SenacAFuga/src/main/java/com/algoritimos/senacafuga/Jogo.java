@@ -1,4 +1,5 @@
-package senac.algoritimosII.afuga;
+package com.algoritimos.senacafuga;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
