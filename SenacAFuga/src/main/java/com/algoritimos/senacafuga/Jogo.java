@@ -1,5 +1,6 @@
 package com.algoritimos.senacafuga;
 
+import static com.algoritimos.senacafuga.DesafioTres.desafioTres;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -58,7 +59,19 @@ public class Jogo {
 		desafioUm.parteDois(personagem);
 		desafioUm.parteTres();
 		
-		
+                
+                
+                DesafioTres desafioTres = new DesafioTres();
+                
+		resposta = Historia.historiaDesafioTres();
+                
+                desafioTres(personagem);
+                desafioTres.alojamento();
+                desafioTres.escolha();
+                desafioTres.cozinha();
+                desafioTres.fim();
+                
+                
 		resposta = Historia.historiaDesafioQuatro(personagem);
 		SalvarArquivo.gerarArquivo(resposta);
 		escolha = input.next().toUpperCase();

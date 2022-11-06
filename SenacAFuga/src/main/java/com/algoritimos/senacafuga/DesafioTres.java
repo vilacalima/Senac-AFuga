@@ -6,14 +6,7 @@ public class DesafioTres {
 	public static void desafioTres(String personagem) {
 		String iniciar;
 		do {
-			System.out.println("\n Parab�ns!");
-			System.out.println("\n Voc� chegou ao terceiro desafio.\n \n Ap�s encontrar Giovanni e retira-lo do Container, chegou a hora de sobreviver!");
-			System.out.println("\n Procure por itens que est�o localizados no navio para constru��o de uma jangada pequena e forte o suficiente para suportar 2 pessoas. ");
-			System.out.println("\n Escolha os pr�ximos passos:\n");
-			System.out.println(" Digite \"INICIAR\" Para dar in�cio ao Desafio.");
-			System.out.println(" Digite \"SAIR\" Para pular do Navio.");
-			System.out
-					.println(" \n \n ATEN��O ! \n \n Ao escolher pular do navio voc� perder� todo seu progresso !! \n");
+			
 			iniciar = input.next().toUpperCase();
 
 			switch (iniciar) {
