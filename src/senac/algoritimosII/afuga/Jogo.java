@@ -57,6 +57,17 @@ public class Jogo {
 		desafioUm.parteDois(personagem);
 		desafioUm.parteTres();
 		
+		DesafioTres desafioTres = new DesafioTres();
+		
+		resposta= Historia.historiaDesafioTres();
+		System.out.println(resposta)
+		
+		desafioTres(Personagem);
+		desafioTres.alojamento();
+		desafioTres.escolha();
+		desafioTres.cozinha(;
+		desafioTres.fim();
+		
 		
 		resposta = Historia.historiaDesafioQuatro(personagem);
 		SalvarArquivo.gerarArquivo(resposta);
