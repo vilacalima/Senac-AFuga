@@ -58,12 +58,23 @@ public class Jogo {
 		desafioUm.parteUm();
 		desafioUm.parteDois(personagem);
 		desafioUm.parteTres();
+                
+                DesafioDois desafioDois = new DesafioDois();
+                
+                resposta = Historia.historiaDesafioDois();
+                System.out.println(resposta);
+                
+                desafioDois.desafioDois(personagem);
+                desafioDois.acertou(personagem);
+                
+                
 		
                 
                 
                 DesafioTres desafioTres = new DesafioTres();
                 
 		resposta = Historia.historiaDesafioTres();
+                System.out.println(resposta);
                 
                 desafioTres(personagem);
                 desafioTres.alojamento();
