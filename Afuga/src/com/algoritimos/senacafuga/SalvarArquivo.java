@@ -1,5 +1,6 @@
 package com.algoritimos.senacafuga;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -9,13 +10,18 @@ import java.nio.file.StandardOpenOption;
 
 
 public class SalvarArquivo {
-	static void gerarArquivo(String texto) throws IOException {
-//		int temp = 0;
-//		Path bubbleSortDiretorio = Files.createDirectory(Paths.get("./historiaJogo"));
-//		for(int i = 0; i>temp; i++) {
-//			temp = i;
-//		}
-//		Path bubbleSortArquivo = Files.createFile(bubbleSortDiretorio.resolve("historiaJogoPasso" + temp + ".txt"));
-//		Files.write(bubbleSortArquivo, (texto + "\r\n").getBytes(StandardCharsets.ISO_8859_1), StandardOpenOption.APPEND);
-	}
+	
+	public static void gerarArquivo() { 
+
+		File file = new File("Afuga"); 
+		file.mkdir(); 
+		File arquivo = new File("Afuga/fases.txt"); 
+
+		try { 
+			arquivo.createNewFile(); 
+
+		} catch (IOException e) { 
+			e.printStackTrace(); 
+		} 
+	} 
 }

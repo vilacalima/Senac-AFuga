@@ -6,6 +6,7 @@ public class Bolsa {
 
 	public static List<String> bolsa(String personagem, String adicionar, String obj) {
 
+		//refatorar bolsa tbm
 		List<String> bolsa = new ArrayList<String>();
 		bolsa.add("\n Canivete");
 		bolsa.add("\n Sinalizador");
