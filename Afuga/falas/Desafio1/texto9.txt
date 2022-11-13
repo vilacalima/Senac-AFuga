@@ -1,2 +1,4 @@
-Digite SIM para continuar forcando a porta
-Digite PEGAR para pegar o kit e se curar
+Voce se levanta lentamente da cama e caminha com dificuldade ate o armario,
+pega o pe de cabra e vai ate a porta para tentar abri-la. 
+Voce perdeu muito sangue e esta fraco, nao consegue abrir.
+Continuar tentando abrir ou se curar para ter forcar para abrir a porta?
