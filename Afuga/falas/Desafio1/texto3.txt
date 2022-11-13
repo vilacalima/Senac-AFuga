@@ -1,0 +1,3 @@
+CURAR - Se levantar, pegar o kit para se curar e ir ate a porta.
+PEGAR - Se levantar, ir ate o armario pegar o pe de cabra e ir ate a porta.
+Escolha opcao CURAR ou PEGAR
