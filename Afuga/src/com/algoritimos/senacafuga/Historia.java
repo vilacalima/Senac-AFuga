@@ -3,21 +3,7 @@ import java.io.IOException;
 
 public class Historia {
 	private static String historia = null;
-	public static String historiaInicial() throws IOException {
 		
-		historia = """
-                           ***A FUGA***\r
-                           \r
-                            Ap\ufffds vender carga roubada por engano Giovanni teve que fugir da cidade de santos.\r
-                           Ao entrar em um navio cargueiro onde trabalhavam seus amigos seguiu em dire\ufffd\ufffdo ao Rio de Janeiro \r
-                           Mas durante a viagem o inesperado aconteceu, o navio que Giovanni estava colidiu com outro de menor porte, causando um naufr\ufffdgio.\r
-                           E agora Giovanni?\r
-                           Junte for\ufffdas, colete itens, entre nessa briga e sobreviva!\r
-                           Boa Sorte!\r
-                           """;
-		return historia;
-	}
-	
 	public static String historiaDesafioUm() {
 		
 		historia = """
