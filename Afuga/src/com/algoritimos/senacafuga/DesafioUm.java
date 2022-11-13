@@ -13,15 +13,19 @@ public class DesafioUm {
 	private static String resposta = null;
 	private static Scanner input = new Scanner(System.in);
 	
-	public static void parteUm() {
+	/**
+	 * @throws Exception
+	 */
+	public static void parteUm() throws Exception {
 		
 		Scanner input = new Scanner(System.in);
 		
 		String opcao = input.next().toUpperCase();
 		
 		do {
-			
-			System.out.println("Digite OLHAR para olhar ao redor \n");
+			String userIsabela = "\\isabe\\OneDrive\\Documentos\\";
+			Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto0.txt");
+
 			opcao = input.next().toUpperCase();
 
 		}
@@ -30,118 +34,105 @@ public class DesafioUm {
 		
 	}
 	
-	public static void parteDois(String personagem) {
+	/**
+	 * @param personagem
+	 * @throws Exception
+	 */
+	public static void parteDois(String personagem) throws Exception {
 		
 		Scanner input = new Scanner(System.in);
 		String opcao = "";
 		int tentativa = 0;
+		String userIsabela = "\\isabe\\OneDrive\\Documentos\\";
+		Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto1.txt");
 
-
-		System.out.println("\n Voce olha para seu braco e nota que esta ferido. "
-				+ "\n Olha para o canto do quarto e ve seu kit de primeiros socorros. "
-				+ "\n Olha para a direita e ve um pequeno arm�rio, onde voce se lembra que ha algumas ferramentas guardadas. "
-				+ "\n Logo a sua frente, esta a porta que ao olhar bem voc� percebe que esta emperrada, essa porta te leva para a saida do alojamento. "
-				+ "Voce precisa sair!!! \n ");
+		Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto2.txt");
 
 
 		do {
 
-			System.out.println("CURAR - Se levantar, pegar o kit para se curar e ir ate a porta.");
-			System.out.println("PEGAR - Se levantar, ir at� o arm�rio pegar o p� de cabra e ir at� a porta. \n ");
-			System.out.println("Escolha op��o CURAR ou PEGAR");
+			Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto3.txt");
 			opcao = input.next().toUpperCase();
 
 			switch (opcao) {
 			case "CURAR":
-				System.out.println("\n Voc� se levanta lentamente da cama e caminha com dificuldade at� o kit."
-						+ "\n Consegue se curar e vai at� a porta para tentar abri-la. "
-						+ "\n A porta est� emperrada e voc� precisa de alguma ferramenta para abrir");
-				System.out.println("Continuar tentando abrir ou pegar ferramenta para abrir a porta? \n ");
+			Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto4.txt");
 				do {
 
-					System.out.println("SIM para Continuar for�ando a porta");
-					System.out.println("PEGAR para Pegar ferramenta");
+					Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto5.txt");
 					opcao = input.next().toUpperCase();
 
 					switch (opcao) {
 					case "SIM":
 
-						System.out.println("\n A porta esta emperrada e voce precisa de alguma ferramenta para abri-la");
-						System.out.println("Continuar tentando abrir ou pegar ferramenta para abrir a porta? \n");
+					Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto6.txt");
 
 						break;
 					case "PEGAR":
-						System.out.println("Voce pegou o pe de Cabra!");
-						System.out.println("Apos muito esforco voce conseguiu abrir a porta!!!\n");
-						System.out.println("Habilidade desbloqueada: FORCA\n");
-						System.out.println("Se lembre que voce escondeu seu amigo Giovanni no container."
-								+ "\n Voce precisa resgata-lo. Va ate o conves e o procure!");
+					Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto7.txt");
 						break;
 					default:
-						System.out.println("Opcao invalida");
+					Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto8.txt");
 						break;
 					}
 				} while (!opcao.equals("PEGAR"));
 				break;
 
 			case "PEGAR":
-				System.out.println("\n Voce se levanta lentamente da cama e caminha com dificuldade ate o armario,"
-						+ "\n pega o pe de cabra e vai ate a porta para tentar abri-la. "
-						+ "\n Voce perdeu muito sangue e esta fraco, nao consegue abrir.");
-				Bolsa.bolsa(personagem, "ADICIONAR", "\n P� de cabra");
-				System.out.println("Continuar tentando abrir ou se curar para ter forcar para abrir a porta? \n");
+			Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto9.txt");
+				Bolsa.bolsa(personagem, "ADICIONAR", "\n Pe de cabra");
+				
 
 				do {
-					System.out.println("Digite SIM para continuar forcando a porta");
-					System.out.println("Digite PEGAR para pegar o kit e se curar");
+					Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto10.txt");
 					opcao = input.next().toUpperCase();
 
 					switch (opcao) {
 					case "SIM":
 						tentativa = tentativa + 1;
-						System.out.println("\n Voce esta perdendo muito sangue, deseja continuar forcando a porta? \n");
+						Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto11.txt");
 
 						break;
 					case "PEGAR":
-						System.out.println("\n Voce se curou e agora tem forcas para abrir a porta");
-						System.out.println("Apos muito esforco voce conseguiu abrir a porta!!!\n");
-						System.out.println("Habilidade desbloqueada: FORCA\n");
-						System.out.println("Se lembre que voce escondeu seu amigo Giovanni no container."
-								+ "\n Voce precisa resgata-lo. Va ate o conves e o procure! \n");
+					Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto12.txt");
 						break;
 					default:
-						System.out.println("Opcao invalida");
+					Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto13.txt");
 						break;
 					}
 				} while (!opcao.equals("PEGAR") && (tentativa < 3));
 
 				if (!opcao.equals("PEGAR")) {
-					System.out.println("Voce morreu...");
+					Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto14.txt");
 
 					Credito.credito(false);
 				}
 
 				break;
 			default:
-				System.out.println("Opcao Invalida");
+			Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto15.txt");
 				break;
 			}
 		} while ((!"CURAR".equals(opcao)) && (!"PEGAR".equals(opcao)));
 		
 	}
 	
-	public static void parteTres() {
+	/**
+	 * @throws Exception
+	 * 
+	 */
+	public static void parteTres() throws Exception {
 		
 		Scanner input = new Scanner(System.in);
 		String opcao = "";
-		
+		final String userIsabela = "\\isabe\\OneDrive\\Documentos\\";
 		do {
-			System.out.println("Digite IR para encontrar Giovanni");
+			
+			Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto16.txt");
 			opcao = input.next().toUpperCase();
 		} while (!"IR".equals(opcao));
 
-		System.out.println("\n Ao sair do quarto, voce sobe a escada que esta a sua frente,"
-				+ "\n Ao chegar no topo voce vira a esquerda em um corredor longo e estreito. \n");
+		Arquivo.lerArquivo("C:\\Users" + userIsabela + "Senac-AFuga\\Afuga\\falas\\Desafio1\\texto17.txt");
 	}
 	
 	
