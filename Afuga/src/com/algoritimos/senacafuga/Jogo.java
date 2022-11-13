@@ -14,30 +14,31 @@ public class Jogo {
 		String resposta, ver, escolha;
 		List<String> bolsa = new ArrayList<String>();
 		
+		Arquivo.lerArquivo("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\falas\\HistoriaInicial");
 //		Instanciando a classe Personagens
 //		Salvar um arquivo com os personagens
 		
-		Personagem pedro = new Personagem();
-		pedro.setNome("Pedro");
-		pedro.setClasse("Assassino");
-		pedro.setPontoForte("Habilidades com faca");
-		pedro.setForca(3);
-		
-		Personagem thiago = new Personagem();
-		pedro.setNome("Thiago");
-		pedro.setClasse("Mágico");
-		pedro.setPontoForte(""); //decidir
-		pedro.setForca(3);
-		
-		Personagem matheus = new Personagem();
-		pedro.setNome("Matheus");
-		pedro.setClasse("Guerreiro");
-		pedro.setPontoForte("Atirador");
-		pedro.setForca(3);
-		
-		
-		DesafioUm.desafioUm("Pedro");
-		
+//		Personagem pedro = new Personagem();
+//		pedro.setNome("Pedro");
+//		pedro.setClasse("Assassino");
+//		pedro.setPontoForte("Habilidades com faca");
+//		pedro.setForca(3);
+//		
+//		Personagem thiago = new Personagem();
+//		pedro.setNome("Thiago");
+//		pedro.setClasse("Mágico");
+//		pedro.setPontoForte(""); //decidir
+//		pedro.setForca(3);
+//		
+//		Personagem matheus = new Personagem();
+//		pedro.setNome("Matheus");
+//		pedro.setClasse("Guerreiro");
+//		pedro.setPontoForte("Atirador");
+//		pedro.setForca(3);
+//		
+//		
+//		DesafioUm.desafioUm("Pedro");
+//		
 		
 		
 		
