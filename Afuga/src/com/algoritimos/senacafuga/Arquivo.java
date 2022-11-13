@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 
-public class SalvarArquivo {
+public class Arquivo {
 	
 	public static void gerarArquivo() { 
 
