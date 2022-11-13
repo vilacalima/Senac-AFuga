@@ -1,12 +1,15 @@
 package com.algoritimos.senacafuga;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.Scanner;
 
 
 public class Arquivo {
@@ -25,16 +28,9 @@ public class Arquivo {
 		} 
 	}
 	
-	public static void lerArquivo(String local) {
-		Path path = Paths.get(local);
-		System.out.println(path.toAbsolutePath());
-		try {
-			System.out.println(Files.readString(path));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		//"C:\\Users\\robson.vlima3\\workspace\\Senac\\src\\Aula03"
+	public static void lerArquivo(String caminho) throws Exception {
+		Path path = Paths.get(caminho);
+		String conteudo = new String(Files.readAllBytes(path), StandardCharsets.ISO_8859_1);
+		System.out.println(conteudo);
 	}
 }

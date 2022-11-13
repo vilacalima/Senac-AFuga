@@ -1,20 +1,25 @@
 package com.algoritimos.senacafuga;
 
-import static com.algoritimos.senacafuga.DesafioTres.desafioTres;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 
 public class Jogo {
 	private static Scanner input = new Scanner(System.in);
 
-	public static void main(String[] args) throws IOException {
-		String resposta, ver, escolha;
-		List<String> bolsa = new ArrayList<String>();
+	public static void main(String[] args) throws Exception {
+//		String resposta, ver, escolha;
+//		List<String> bolsa = new ArrayList<String>();
+		String userRobson = "\\robso\\workspace\\";
+		Arquivo.lerArquivo("C:\\Users" + userRobson + "Senac-AFuga\\Afuga\\src\\falas\\hitoriaInicial\\historiaInicial.txt");
 		
-		Arquivo.lerArquivo("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\falas\\HistoriaInicial");
+//		FileReader arq = new FileReader("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\falas\\historiaInicial");
+//		BufferedReader lerArq = new BufferedReader(arq);
+//	    System.out.println(lerArq);
+		//Arquivo.lerArquivo("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\falas\\HistoriaInicial");
 //		Instanciando a classe Personagens
 //		Salvar um arquivo com os personagens
 		
