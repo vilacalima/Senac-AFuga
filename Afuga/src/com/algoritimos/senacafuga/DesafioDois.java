@@ -1,4 +1,4 @@
-package senac.algoritimosII.afuga;
+package com.algoritimos.senacafuga;
 import java.util.Scanner;
 
 public class DesafioDois {
@@ -10,12 +10,6 @@ public class DesafioDois {
 		boolean menu = false;
 
 		do {
-			System.out.println("\n \n 2� Desafio -  Encontre o Giovanni!");
-			System.out.println("Dessa vez voc� n�o precisar� de materiais! Voc� ir� precisar realizar um c�lculo matem�tico. Veja bem... Voc� esta locaizado no container 260, para sair voc� deve saber o n�mero do container que est�, dividir por 2 e somar 3."); // ****
-			System.out.println("#### ESCOLHA AS OP��ES ABAIXO ####");
-			System.out.println("Digite \"DICA\" para obter uma dica");
-			System.out.println("Digite \"N�O\" caso n�o precise de ajuda");
-			System.out.println("Digite \"AJUDA\" para ter uma ajuda \n");
 			opcoes = input.next().toUpperCase();
 
 			switch (opcoes) {
@@ -24,7 +18,7 @@ public class DesafioDois {
 				num = input.nextInt();
 				break;
 
-			case "N�O":
+			case "NAO":
 				System.out.println("Digite sua resposta:");
 				num = input.nextInt();
 				break;
@@ -60,21 +54,21 @@ public class DesafioDois {
 					+ "Para desatar esse n�, pegue o canivete que est� na sua mochila e corte o n�. \n");
 			System.out.println("Digite \"ver\" para ver a bolsa e pegar o canivete na mochila"); 
 			ver = input.next().toUpperCase();
-
+                        
+                       
 			if (ver.equals("VER")) {
 				Bolsa.bolsa(personagem, ver, null);
-				System.out.println("\n Agora voc� est� com o canivete na m�o");	
+				System.out.println("\n Agora voce esta com o canivete na mao");	
 			}
-		} while (!ver.equals("VER"));
-		
+		} while (ver.equals("null"));
+		 
 		do {
-			System.out.println("Digite \"DESATAR\" para desatar o n�");
+			System.out.println("Digite \"DESATAR\" para desatar o no");
 			desatar = input.next().toUpperCase();
 			if (desatar.equals("DESATAR")) {
-				System.out.println("Pronto! N� desatado. Parab�ns!");
+				System.out.println("Pronto! No desatado. Parabens!");
 			}
 
-		} while (!desatar.equals("DESATAR"));
-
+		} while (!desatar.equals("DESATAR"));               
 	}
 }

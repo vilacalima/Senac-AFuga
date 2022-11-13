@@ -1,4 +1,4 @@
-package senac.algoritimosII.afuga;
+package com.algoritimos.senacafuga;
 
 public class Credito {
 	
