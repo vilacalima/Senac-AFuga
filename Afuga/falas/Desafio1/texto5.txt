@@ -1,0 +1,2 @@
+SIM para Continuar forcando a porta
+PEGAR para Pegar ferramenta

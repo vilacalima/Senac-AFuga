@@ -1,0 +1,4 @@
+Voce se levanta lentamente da cama e caminha com dificuldade ate o kit.
+Consegue se curar e vai ate a porta para tentar abri-la. 
+A porta esta emperrada e voce precisa de alguma ferramenta para abrir
+Continuar tentando abrir ou pegar ferramenta para abrir a porta? 
