@@ -23,5 +23,18 @@ public class Arquivo {
 		} catch (IOException e) { 
 			e.printStackTrace(); 
 		} 
-	} 
+	}
+	
+	public static void lerArquivo(String local) {
+		Path path = Paths.get(local);
+		System.out.println(path.toAbsolutePath());
+		try {
+			System.out.println(Files.readString(path));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		//"C:\\Users\\robson.vlima3\\workspace\\Senac\\src\\Aula03"
+	}
 }
