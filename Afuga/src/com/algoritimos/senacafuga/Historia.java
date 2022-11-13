@@ -46,13 +46,5 @@ public class Historia {
         }
 	
 	
-	public static String historiaDesafioQuatro(String personagem) throws IOException {
-		
-		historia = "Parabéns " + personagem + " você chegou na última fase... \r\n" 
-				+ "Ohh não os outros tripulantes descobriram que você está prestes a sair do navio, escolha uma das opõees e sobreviva: \r\n"
-				+ "Digite \"Correr\" para correr e deixar Giovanni para tr�s \r\n"
-				+ "Digite \"Ficar\" para ficar e lutar \r\n";
-								
-		return historia;
-	}
+	
 }
