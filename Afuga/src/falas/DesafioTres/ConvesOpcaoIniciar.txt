@@ -1,0 +1,7 @@
+Escolha os proximos passos:
+
+Digite \"DIREITA\" para olhar para a Direita.
+Digite \"ESQUERDA\" para olhar para a Esquerda.
+Digite \"CIMA\" para olhar para  Cima.
+Digite \"BAIXO\" para olhar para  Baixo. 
+			

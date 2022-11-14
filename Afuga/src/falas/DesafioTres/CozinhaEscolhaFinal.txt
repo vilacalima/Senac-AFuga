@@ -1,0 +1,2 @@
+Digite:\"IR\"Para voltar ao Conv�s. 
+Digite \"SAIR\" Para pular do Navio. 
