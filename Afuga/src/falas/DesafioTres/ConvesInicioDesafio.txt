@@ -1,0 +1,7 @@
+Você está no convês e devido ao estado do navio após colisão, algumas madeiras se soltaram de algumas partes do navio e outras são partes do outro navio.
+
+
+Olhe em sua volta para localizar o primeiro item que o possibilite construir uma pequena jangada. 
+
+
+Você poderá olhar para direita, esquerda, para cima e para baixo

@@ -31,28 +31,9 @@ public class Historia {
           
         }
         
-        public static String historiaDesafioTres(){
+        
             
-            historia = """
-                       \n Parabéns!
-                        Você chegou ao terceiro desafio.\n \n Após encontrar Giovanni e retira-lo do Container, chegou a hora de sobreviver!
-		Procure por itens que estão localizados no navio para constru��o de uma jangada pequena e forte o suficiente para suportar 2 pessoas. 
-		Escolha os proximos passos:
-                Digite \"INICIAR\" Para dar in�cio ao Desafio.
-                Digite \"SAIR\" Para pular do Navio.
-	        ATENÇÃO !  Ao escolher pular do navio você perdera todo seu progresso !! """;
-           
-                    return historia;
-        }
-	
-	
-	public static String historiaDesafioQuatro(String personagem) throws IOException {
-		
-		historia = "Parabéns " + personagem + " você chegou na última fase... \r\n" 
-				+ "Ohh não os outros tripulantes descobriram que você está prestes a sair do navio, escolha uma das opõees e sobreviva: \r\n"
-				+ "Digite \"Correr\" para correr e deixar Giovanni para tr�s \r\n"
-				+ "Digite \"Ficar\" para ficar e lutar \r\n";
-								
-		return historia;
-	}
 }
+	
+	
+
