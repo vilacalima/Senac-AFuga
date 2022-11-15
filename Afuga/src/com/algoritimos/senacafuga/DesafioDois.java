@@ -8,38 +8,47 @@ public class DesafioDois {
 		String opcoes;
 		int num = 0;
 		boolean menu = false;
-
+                
 		do {
 			opcoes = input.next().toUpperCase();
-
+                         
 			switch (opcoes) {
 			case "DICA":
-				System.out.println("Some o numero 130 por ele mesmo que voce saber� o numero do container");
-				num = input.nextInt();
-				break;
+                      String userAcer = "\\acer\\Documentos\\";
+		      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\OpcaoDica4.txt");
 
+                            
+				num = input.nextInt();    
+				break;
+                                
 			case "NAO":
-				System.out.println("Digite sua resposta:");
+		      String userAcer = "\\acer\\Documentos\\";
+		      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\OpcaoNao5.txt");
 				num = input.nextInt();
 				break;
 
 			case "AJUDA":
-				System.out.println("\n Como dito no enunciado do desafio, o n�mero do seu container � 260. Divida o mesmo por 2 e some mais 3!");
-				System.out.println("Talvez a fome tenha te deixado confuso, n�o e t�o dif�cil assim");
-				System.out.println("Digite sua resposta: \n");
+		      String userAcer = "\\acer\\Documentos\\";
+		      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\OpcaoAjuda3.txt");
+                      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\OpcaoAjudapartedois.txt");
+                      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\OpcaoAjudapartetres.txt");
+
 				num = input.nextInt();
 				break;
 			}
 
 			switch (num) {
 			case 133:
-				System.out.println("Resposta correta!");
+		      String userAcer = "\\acer\\Documentos\\";
+		      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\RespostaCase1.txt");
 				menu = true;
 				acertou(personagem);
 				break;
 			default:
-				System.out.println("Tente novamente");
-				break;
+                      String userAcer = "\\acer\\Documentos\\";
+		      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\RespostaCase2.txt");				
+                      break;
+                      
 			}
 
 		} while (!menu);
@@ -50,24 +59,26 @@ public class DesafioDois {
 
 		do {
 
-			System.out.println("\n Pronto! Giovanni foi localizado com um n� em seus pulsos."
-					+ "Para desatar esse n�, pegue o canivete que est� na sua mochila e corte o n�. \n");
-			System.out.println("Digite \"ver\" para ver a bolsa e pegar o canivete na mochila"); 
+                      String userAcer = "\\acer\\Documentos\\";
+		      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\SegundaparteIntroducao6.txt");					+ "Para desatar esse n�, pegue o canivete que est� na sua mochila e corte o n�. \n");
 			ver = input.next().toUpperCase();
                         
                        
 			if (ver.equals("VER")) {
 				Bolsa.bolsa(personagem, ver, null);
-				System.out.println("\n Agora voce esta com o canivete na mao");	
+		     String userAcer = "\\acer\\Documentos\\";
+		      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\SegundaparteVer7.txt");					+ "Para desatar esse n�, pegue o canivete que est� na sua mochila e corte o n�. \n");
 			}
 		} while (ver.equals("null"));
 		 
 		do {
-			System.out.println("Digite \"DESATAR\" para desatar o no");
+		      String userAcer = "\\acer\\Documentos\\";
+		      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\SegundaparteDesatar8.txt");	
 			desatar = input.next().toUpperCase();
 			if (desatar.equals("DESATAR")) {
-				System.out.println("Pronto! No desatado. Parabens!");
-			}
+                       String userAcer = "\\acer\\Documentos\\";
+		      Arquivo.lerArquivo("C:\\Users" + userAcer + "Documents\DesafioDois\Terceiraparte9.txt");			
+                        }
 
 		} while (!desatar.equals("DESATAR"));               
 	}
