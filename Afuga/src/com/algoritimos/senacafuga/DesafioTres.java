@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class DesafioTres {
 	private static String resposta;
-//	private static String user = "\\nicolas\\workspace\\";
+	private static String user = "\\nicolas.cmarques\\Desktop\\";
 //  private static String user = "\\isabe\\OneDrive\\Documentos\\";
-	private static String user = "\\robso\\workspace\\";
+	//private static String user = "\\robso\\workspace\\";
 	private static Scanner input = new Scanner(System.in);
 	
 	public static void desafioTres(String personagem) throws Exception {
