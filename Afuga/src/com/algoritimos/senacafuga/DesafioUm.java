@@ -13,22 +13,24 @@ public class DesafioUm {
 	private static String resposta = null;
 	private static Scanner input = new Scanner(System.in);
 //  private static String user = "\\isabe\\OneDrive\\Documentos\\";
-	private static String user = "\\robso\\workspace\\";
+//	private static String user = "\\robso\\workspace\\";
+	private static String user = "\\robson.vlima3\\workspace\\";
 	
 	/**
 	 * @throws Exception
 	 */
-	public static void parteUm() throws Exception {
+	public static void parteUm(String personagem) throws Exception {
 		
 		Scanner input = new Scanner(System.in);
 		
-		String opcao = input.next().toUpperCase();
+		String opcao = null;
 		
 		do {
 			
-			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\Desafio1\\texto0.txt");
+			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\Desafio1\\texto1.txt");
 
 			opcao = input.next().toUpperCase();
+			parteDois(personagem);
 
 		}
 
@@ -45,7 +47,7 @@ public class DesafioUm {
 		Scanner input = new Scanner(System.in);
 		String opcao = "";
 		int tentativa = 0;
-		Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\Desafio1\\texto1.txt");
+//		Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\Desafio1\\texto1.txt");
 
 		Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\Desafio1\\texto2.txt");
 

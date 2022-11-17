@@ -1,0 +1,4 @@
+Escolha as opcoes abaixo:
+Digite "Dica" para obter uma dica
+Digite "Nao" caso nao precise de ajuda
+Digite "Ajuda" para ter uma ajuda
