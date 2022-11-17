@@ -4,11 +4,18 @@ public class Personagem {
 
 	private String nome;
 	private String classe;
-	private String PontoForte;
+	private String pontoForte;
 	private int forca;
 	
 	public Personagem() {
 		
+	}
+	
+	public Personagem(String nome, String classe, String pontoForte, int forca) {
+		this.nome = nome;
+		this.classe = classe;
+		this.pontoForte = pontoForte;
+		this.forca = forca;
 	}
 	
 	public String getNome() {
@@ -28,11 +35,11 @@ public class Personagem {
 	}
 
 	public String getPontoForte() {
-		return PontoForte;
+		return pontoForte;
 	}
 
 	public void setPontoForte(String pontoForte) {
-		PontoForte = pontoForte;
+		this.pontoForte = pontoForte;
 	}
 
 	public int getForca() {

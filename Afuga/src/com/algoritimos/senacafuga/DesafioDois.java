@@ -50,7 +50,7 @@ public class DesafioDois {
 	}
 	
 	public static void acertou(String personagem) throws Exception {
-		String ver, desatar;
+		String ver = null, desatar;
 
 		do {
 
