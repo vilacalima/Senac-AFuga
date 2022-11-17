@@ -7,5 +7,6 @@ public class Jogo {
 						+ "Voce esta no nosso menu");
 		Menu.menuInicial();
 		
+
 	}
 }
