@@ -57,9 +57,22 @@ public class Menu {
 				} while(classe != 1 && classe != 2 && classe != 3);
 								
 				//adicionar o salvar arquivo
-				
+
+				//Aqui se inicia a contagem de tempo
+				Long tempoInicio = System.currentTimeMillis();
+
+
 				DesafioUm.parteUm(personagem.getNome());
 				DesafioDois.desafioDois(personagem.getNome());
+				DesafioTres.desafioTres(personagem.getNome());
+				//Inserir Desafio4
+
+
+				//Aqui finaliza a contagem de tempo
+				Long tempoFim = System.currentTimeMillis();
+				long tempoExecucao = (tempoFim-tempoInicio);
+				System.out.println("Voce finalizou o jogo em " + tempoExecucao/1000 + " segundos");
+
 				
 				
 			} else if(acao == 2) {

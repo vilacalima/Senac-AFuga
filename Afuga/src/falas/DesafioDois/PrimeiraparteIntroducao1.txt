@@ -1,3 +1,3 @@
 Desafio Dois - 
 Encontre o Giovanni
-Dessa vez voce nao ira precisar de materias! Voce ira precisar realizar um calculo matematico. 
+Dessa vez voce nao ira precisar de materias! Voce ira precisar realizar um calculo matematico. Onde ira dividir o número do seu container por 2 e somar 3.

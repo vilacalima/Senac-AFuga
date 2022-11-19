@@ -1,17 +1,17 @@
-Parabéns!
+Parabens!
                         
 Você chegou ao terceiro desafio !!!.
 
-Após encontrar Giovanni e retira-lo do Container, chegou a hora de sobreviver!
+Apos encontrar Giovanni e retira-lo do Container, chegou a hora de sobreviver!
 
-Procure por itens que estão localizados no navio para construção de uma jangada pequena e forte o suficiente para suportar 2 pessoas. 
+Procure por itens que estao localizados no navio para construcao de uma jangada pequena e forte o suficiente para suportar 2 pessoas. 
 
 Escolha os proximos passos:
                 
-Digite \"INICIAR\" Para dar inicio ao Desafio.
-Digite \"SAIR\" Para pular do Navio.
+Digite "INICIAR" Para dar inicio ao Desafio.
+Digite "SAIR" Para pular do Navio.
 
-ATENÇÃO !  Ao escolher pular do navio você perdera todo seu progresso !! ;
+ATENCAO! Ao escolher pular do navio voce perdera todo seu progresso!! ;
            
                     
      

@@ -1,4 +1,4 @@
 Escolha as opcoes abaixo:
-Digite "Dica" para obter uma dica
+Digite "Dica" para saber o numero do container
 Digite "Nao" caso nao precise de ajuda
 Digite "Ajuda" para ter uma ajuda

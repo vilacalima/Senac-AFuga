@@ -1,2 +1,3 @@
 A porta esta emperrada e voce precisa de alguma ferramenta para abri-la
+
 Continuar tentando abrir ou pegar ferramenta para abrir a porta? 

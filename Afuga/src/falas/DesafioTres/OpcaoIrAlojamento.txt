@@ -1,1 +1,1 @@
-Digite:\"IR\" Para ir ao alojamento. 
+Digite:"IR" Para ir ao alojamento. 
