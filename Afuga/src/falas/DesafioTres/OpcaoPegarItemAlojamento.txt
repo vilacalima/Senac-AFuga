@@ -1,1 +1,1 @@
-Digite \"PEGAR\" para pegar os itens !
+Digite "PEGAR" para pegar os itens!

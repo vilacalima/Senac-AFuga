@@ -1,4 +1,4 @@
-Parabéns você chegou na última fase
-Ohh não os outros tripulantes descobriram que você está prestes a sair do navio, escolha uma das opõees e sobreviva:
-Digite \"Correr\" para correr e deixar Giovanni para três 
-Digite \"Ficar\" para ficar e lutar
+Parabens você chegou na ultima fase
+Ohh nao os outros tripulantes descobriram que você esta prestes a sair do navio, escolha uma das opcoes e sobreviva:
+Digite "Correr" para correr e deixar Giovanni para tras 
+Digite "Ficar" para ficar e lutar

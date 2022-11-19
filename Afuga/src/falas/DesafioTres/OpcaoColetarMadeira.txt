@@ -1,1 +1,1 @@
-Digite:\"PEGAR\" Para coleta-las. 
+Digite:"PEGAR" Para coleta-las. 
