@@ -1,1 +1,1 @@
-Como dito no enunciado do desafio, o numero do seu container 260. Divida o mesmo por 2 e some mais 3!
+Como dito no enunciado do jogo, o numero do seu container é 260. Divida o número do container por 2 e some mais 3!

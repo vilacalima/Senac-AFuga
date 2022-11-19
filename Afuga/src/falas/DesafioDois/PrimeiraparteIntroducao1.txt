@@ -1,5 +1,3 @@
 Desafio Dois - 
 Encontre o Giovanni
-Dessa ve voce nao ira precisar de materias! Voce ira precisar realizar um calculo matematico. 
-Veja bem... Voce esta localizado no container 260, para sair voce deve sabr o numero do container em que esta,
-somar por 2 e dividir por 3.
+Dessa vez voce nao ira precisar de materias! Voce ira precisar realizar um calculo matematico. 

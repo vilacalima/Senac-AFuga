@@ -59,6 +59,8 @@ public class Menu {
 				//adicionar o salvar arquivo
 				
 				DesafioUm.parteUm(personagem.getNome());
+				DesafioDois.desafioDois(personagem.getNome());
+				
 				
 			} else if(acao == 2) {
 				
