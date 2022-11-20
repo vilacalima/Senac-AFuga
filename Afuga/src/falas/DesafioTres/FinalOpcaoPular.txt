@@ -1,1 +1,3 @@
-Voce pulou do navio! \n \n Todo seu progresso foi perdido. Volte em outra oportunidade para salvar Geovanni!
+Voce pulou do navio! 
+
+Todo seu progresso foi perdido. Volte em outra oportunidade para salvar Geovanni!
