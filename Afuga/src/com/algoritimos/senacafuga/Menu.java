@@ -29,8 +29,8 @@ public class Menu {
 				System.out.println("Escolha a sua classe\n");
 				
 				System.out.println("1 - Guerreiro\n"
-				          + "2 - Assassino\n"
-						  + "3 - Magico");
+						          + "2 - Assassino\n"
+								  + "3 - Magico");
 				int classe = input.nextInt();
 				do {
 					
@@ -65,7 +65,8 @@ public class Menu {
 				DesafioUm.parteUm(personagem.getNome());
 				DesafioDois.desafioDois(personagem.getNome());
 				DesafioTres.desafioTres(personagem.getNome());
-				//Inserir Desafio4
+				DesafioQuatro.historiaDesafioQuatro();
+				
 
 
 				//Aqui finaliza a contagem de tempo

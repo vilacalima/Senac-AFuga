@@ -1,4 +1,6 @@
 Tem dois oponentes vindo ate voce
-Voce tem duas opções
+
+Voce tem duas opçoes:
+
 Digite "Combate" para entrar em combate com dois oponentes mesmo com Giovanni no apoio
 Digite "Confiar" para confiar em Giovanni e lutar apenas contra um oponente
