@@ -8,7 +8,10 @@ import java.util.UUID;
 
 public class GravarArquivo {
 
-	public static void main(String[] args) throws Exception {
+	/**
+	 * @throws Exception
+	 */
+	public static void gravar() throws Exception {
 		Path novoDiretorio = Files.createDirectory(Path.of("./novoDiretorio-" + UUID.randomUUID()));
 		System.out.println("Novo diretório:" + novoDiretorio.toAbsolutePath());
 		
