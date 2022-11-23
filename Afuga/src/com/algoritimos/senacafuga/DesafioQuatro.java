@@ -24,15 +24,15 @@ public class DesafioQuatro {
 					Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\primeiraParteCorrer.txt");
 					subir = input.next().toUpperCase();
 					if(subir.equals("SUBIR")) {
-						
+						segundaParte(subir);
 					}
 				} while(!subir.equals("SUBIR"));
-					
-				
-				
 				break;
+				
 			case "FICAR":
 				Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\primeiraParteFicar.txt");
+				verBolsa();
+				segundaParte("FICAR");
 				break;
 			default:
 				resposta = "Opção errada";
@@ -43,28 +43,30 @@ public class DesafioQuatro {
 	
 	public static void segundaParte(String opcao) throws Exception {
 		
-		if (opcao.equals("CORRER")) {
+		if(opcao.equals("SUBIR")) {
 			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\segundaParteCorrer.txt");
-			String resposta = input.next().toUpperCase();
-			if(resposta.equals("SUBIR")) {
-				Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\segundaParteCorrer2.txt");
-			}
-
+			verBolsa();
+			terceiraParteVerBolsa("CORRER", "SUBIR");
+				
+			
+			
 		} else if (opcao.equals("FICAR")) {
-			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\segundaParteFicar.txt");
-			String ver = input.next().toUpperCase();
-			//adicionar metodo verbolsa
-			terceiraParteVerBolsa(opcao, ver);
-			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\segundaParteFicar.txt");
+			verBolsa();
+			terceiraParteVerBolsa(opcao, null);
+			
+			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\segundaParteFicar2.txt");
 			String ultimaFase = input.next().toUpperCase();
 			retaFinal(ultimaFase);
 		}
 	}
 
 	public static void terceiraParteVerBolsa(String opcao, String ver) throws Exception {
-		if (opcao.equals("CORRER") || ver.equals("VER")) {
+		
+		if (opcao.equals("CORRER") && ver.equals("SUBIR")) {
+			
 			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\terceiraParteVerBolsaCorrer.txt");
 			Credito.credito(false);
+			
 		} else if(opcao.equals("FICAR") || ver.equals("VER")){
 			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\terceiraParteverBolsaFicar.txt");
 		}
@@ -78,9 +80,26 @@ public class DesafioQuatro {
 			segundaParte("CORRER");
 			break;
 
+			//chamar Credito
 		case "CONFIAR":
 			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\retaFinalConfiar.txt");
 			break;
+			
+			//chamar Credito
 		}
 	}
+	
+	public static void verBolsa() throws Exception {
+		String ver;
+		
+		do {
+			
+			Arquivo.lerArquivo("C:\\Users" + user + "Senac-AFuga\\Afuga\\src\\falas\\DesafioQuatro\\verBolsa.txt");
+			ver = input.next().toUpperCase();
+			
+			//chamar bolsa
+			
+		} while(!ver.equals("VER"));
+	}
 }
+
