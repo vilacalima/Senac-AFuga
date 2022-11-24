@@ -19,12 +19,14 @@ public class Menu {
 	 * @throws Exception
 	 */
 	@SuppressWarnings("resource")
-	public static void menuInicial() throws Exception {
+	public static void menuInicial(String user) throws Exception {
 
 		int acao;
 
 		System.out.println("Confira o Nosso Ranking");
-		String fases =  Arquivo.lerArquivoSemPrint("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\fases.txt");
+		String fases =  Arquivo.lerArquivoSemPrint("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\fases.txt");
+		
+//		String fases =  Arquivo.lerArquivoSemPrint(".\fases.txt");
 		
 		do {
 
@@ -80,10 +82,10 @@ public class Menu {
 				// Aqui se inicia a contagem de tempo
 				Long tempoInicio = System.currentTimeMillis();
 
-				DesafioUm.parteUm(personagem.getNome());
-				DesafioDois.desafioDois(personagem.getNome());
-				DesafioTres.desafioTres(personagem.getNome());
-				DesafioQuatro.historiaDesafioQuatro();
+				DesafioUm.parteUm(personagem.getNome(), user);
+				DesafioDois.desafioDois(personagem.getNome(), user);
+				DesafioTres.desafioTres(personagem.getNome(), user);
+				DesafioQuatro.historiaDesafioQuatro(user);
 				
 				// Aqui finaliza a contagem de tempo
 				Long tempoFim = System.currentTimeMillis();
@@ -94,9 +96,6 @@ public class Menu {
 				//salvar no vetor
 				
 				int ranking[] = { 30, 121, 25, 353, 794 };
-				
-				
-				
 				
 				Arquivo.gerarArquivo();
 				
