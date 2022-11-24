@@ -6,7 +6,8 @@ public class Jogo {
 		System.out.println("Bem vindo a nossa aventura \n" 
 						+ "Voce esta no nosso menu");
 		// Menu.menuInicial(tempoExecucao);
-		Menu.menuInicial(escrever);
-
+		Menu.menuInicial();
+		
+		
 	}
 }

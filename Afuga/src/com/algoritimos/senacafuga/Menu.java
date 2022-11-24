@@ -6,7 +6,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.util.Scanner;
+import java.util.UUID;
 
 public class Menu {
 
@@ -15,6 +18,7 @@ public class Menu {
 	/**
 	 * @throws Exception
 	 */
+	@SuppressWarnings("resource")
 	public static void menuInicial() throws Exception {
 
 		int acao;
@@ -74,39 +78,78 @@ public class Menu {
 				Long tempoInicio = System.currentTimeMillis();
 
 				DesafioUm.parteUm(personagem.getNome());
-				DesafioDois.desafioDois(personagem.getNome());
-				DesafioTres.desafioTres(personagem.getNome());
+//				DesafioDois.desafioDois(personagem.getNome());
+//				DesafioTres.desafioTres(personagem.getNome());
 
-				DesafioQuatro.historiaDesafioQuatro();
+//				DesafioQuatro.historiaDesafioQuatro();
 				
 
 
 				// Aqui finaliza a contagem de tempo
 				Long tempoFim = System.currentTimeMillis();
 				long tempoExecucao = (tempoFim - tempoInicio);
+				int tempoExecucaoFinal = (int) (tempoExecucao / 1000);
 				System.out.println("Voce finalizou o jogo em " + tempoExecucao / 1000 + " segundos");
 
-				File file = new File("Novo Diretorio");
-				file.mkdir();
-
-				File arquivo = new File("Novo Diretorio/Arquivo.txt");
-				try {
-					arquivo.createNewFile();
-
-				} catch (IOException e) {
-
-					e.printStackTrace();
-				}
-
+				//salvar no vetor
+				
+				int ranking[] = { 30, 121, 25, 353, 794 };
+				
+				
+				
+				
+				Arquivo.gerarArquivo();
+				
+				File arquivo = new File("Afuga/fases.txt");
 				FileWriter salvar = new FileWriter(arquivo);
+				BufferedWriter escrever = new BufferedWriter(salvar);
+				
+				
+				try(BufferedWriter bufferedWriter = Files.newBufferedWriter(arquivo, StandardCharsets.ISO_8859_1,
+						StandardOpenOption.APPEND))	{
+					bufferedWriter.write(tempoExecucaoFinal);
+				}
+				
+				Path arquivo1 = Path.of(null)
+				escrever.write(Integer.toString(tempoExecucaoFinal));
+				escrever.close();
+				salvar.close();	
+				
+				
+//				Path novoDiretorio = Files
+//						.createDirectory(Path.of("./ranking"));
+//				System.out.println("Novo diretório:" + novoDiretorio.toAbsolutePath());
+//
+//				Path novoArquivo = Files.createFile(novoDiretorio.resolve("novoArquivo.txt"));
+//				System.out.println("Novo arquivo:" + novoArquivo.toAbsolutePath());
+//
+//				
+//				Files.writeString(novoArquivo, "Valor gerado é " + tempoExecucaoFinal + "\r\n", StandardCharsets.ISO_8859_1,
+//						StandardOpenOption.APPEND);
+				
+//				File file = new File("Novo Diretorio");
+//				file.mkdir();
+//
+//				File arquivo = new File("Novo Diretorio/Arquivo.txt");
+//				try {
+//					arquivo.createNewFile();
+//
+//				} catch (IOException e) {
+//
+//					e.printStackTrace();
+//				}
+//
+//				FileWriter salvar = new FileWriter(arquivo);
 
 				// BufferedWriter escrever = new BufferedWriter(salvar);
 				// escrever.write((int) tempoExecucao, StandardCharsets.ISO_8859_1).toString();
 
-				Files.writeString(null, null, null, null)
+//				Files.writeString(null, null, null, null)
 
-				escrever.close();
-				salvar.close();
+//				Files.writeString(file, "Valor gerado é " + UUID.randomUUID() + "\r\n", StandardCharsets.ISO_8859_1,
+//						StandardOpenOption.APPEND);
+//				escrever.close();
+//				salvar.close();
 
 
 			} else if (acao == 2) {
