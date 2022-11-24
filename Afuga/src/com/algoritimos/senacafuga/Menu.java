@@ -23,6 +23,9 @@ public class Menu {
 
 		int acao;
 
+		System.out.println("Confira o Nosso Ranking");
+		String fases =  Arquivo.lerArquivoSemPrint("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\fases.txt");
+		
 		do {
 
 			System.out.println("\nEscolha uma opcao numerica\n"
@@ -78,13 +81,10 @@ public class Menu {
 				Long tempoInicio = System.currentTimeMillis();
 
 				DesafioUm.parteUm(personagem.getNome());
-//				DesafioDois.desafioDois(personagem.getNome());
-//				DesafioTres.desafioTres(personagem.getNome());
-
-//				DesafioQuatro.historiaDesafioQuatro();
+				DesafioDois.desafioDois(personagem.getNome());
+				DesafioTres.desafioTres(personagem.getNome());
+				DesafioQuatro.historiaDesafioQuatro();
 				
-
-
 				// Aqui finaliza a contagem de tempo
 				Long tempoFim = System.currentTimeMillis();
 				long tempoExecucao = (tempoFim - tempoInicio);
@@ -103,55 +103,11 @@ public class Menu {
 				File arquivo = new File("Afuga/fases.txt");
 				FileWriter salvar = new FileWriter(arquivo);
 				BufferedWriter escrever = new BufferedWriter(salvar);
-				
-				
-				try(BufferedWriter bufferedWriter = Files.newBufferedWriter(arquivo, StandardCharsets.ISO_8859_1,
-						StandardOpenOption.APPEND))	{
-					bufferedWriter.write(tempoExecucaoFinal);
-				}
-				
-				Path arquivo1 = Path.of(null)
-				escrever.write(Integer.toString(tempoExecucaoFinal));
+								
+				escrever.write(fases + "\n" + Integer.toString(tempoExecucaoFinal));
 				escrever.close();
 				salvar.close();	
 				
-				
-//				Path novoDiretorio = Files
-//						.createDirectory(Path.of("./ranking"));
-//				System.out.println("Novo diretório:" + novoDiretorio.toAbsolutePath());
-//
-//				Path novoArquivo = Files.createFile(novoDiretorio.resolve("novoArquivo.txt"));
-//				System.out.println("Novo arquivo:" + novoArquivo.toAbsolutePath());
-//
-//				
-//				Files.writeString(novoArquivo, "Valor gerado é " + tempoExecucaoFinal + "\r\n", StandardCharsets.ISO_8859_1,
-//						StandardOpenOption.APPEND);
-				
-//				File file = new File("Novo Diretorio");
-//				file.mkdir();
-//
-//				File arquivo = new File("Novo Diretorio/Arquivo.txt");
-//				try {
-//					arquivo.createNewFile();
-//
-//				} catch (IOException e) {
-//
-//					e.printStackTrace();
-//				}
-//
-//				FileWriter salvar = new FileWriter(arquivo);
-
-				// BufferedWriter escrever = new BufferedWriter(salvar);
-				// escrever.write((int) tempoExecucao, StandardCharsets.ISO_8859_1).toString();
-
-//				Files.writeString(null, null, null, null)
-
-//				Files.writeString(file, "Valor gerado é " + UUID.randomUUID() + "\r\n", StandardCharsets.ISO_8859_1,
-//						StandardOpenOption.APPEND);
-//				escrever.close();
-//				salvar.close();
-
-
 			} else if (acao == 2) {
 
 				// adicionar leitura de arquivo salvo
@@ -159,7 +115,9 @@ public class Menu {
 
 			} else if (acao == 3) {
 
-				// Adicionar ranking
+				System.out.println("Confira o Nosso Ranking");
+				Arquivo.lerArquivo("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\fases.txt");
+				
 
 			} else if (acao == 4) {
 
