@@ -5,7 +5,9 @@ public class DesafioDois {
 
 	private static Scanner input = new Scanner(System.in);
         // private static String user = "\\acer\\Desktop\\";
-		private static String user = "\\isabe\\OneDrive\\Documentos\\";
+//		private static String user = "\\isabe\\OneDrive\\Documentos\\";
+//		private static String user = "\\robso\\workspace\\";
+	private static String user = "\\robson.vlima3\\workspace\\";
 	/**
 	 * @param personagem
 	 * @throws Exception

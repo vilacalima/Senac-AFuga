@@ -6,7 +6,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.util.Scanner;
+import java.util.UUID;
 
 public class Menu {
 
@@ -15,10 +18,14 @@ public class Menu {
 	/**
 	 * @throws Exception
 	 */
+	@SuppressWarnings("resource")
 	public static void menuInicial() throws Exception {
 
 		int acao;
 
+		System.out.println("Confira o Nosso Ranking");
+		String fases =  Arquivo.lerArquivoSemPrint("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\fases.txt");
+		
 		do {
 
 			System.out.println("\nEscolha uma opcao numerica\n"
@@ -76,39 +83,31 @@ public class Menu {
 				DesafioUm.parteUm(personagem.getNome());
 				DesafioDois.desafioDois(personagem.getNome());
 				DesafioTres.desafioTres(personagem.getNome());
-
 				DesafioQuatro.historiaDesafioQuatro();
 				
-
-
 				// Aqui finaliza a contagem de tempo
 				Long tempoFim = System.currentTimeMillis();
 				long tempoExecucao = (tempoFim - tempoInicio);
+				int tempoExecucaoFinal = (int) (tempoExecucao / 1000);
 				System.out.println("Voce finalizou o jogo em " + tempoExecucao / 1000 + " segundos");
 
-				File file = new File("Novo Diretorio");
-				file.mkdir();
-
-				File arquivo = new File("Novo Diretorio/Arquivo.txt");
-				try {
-					arquivo.createNewFile();
-
-				} catch (IOException e) {
-
-					e.printStackTrace();
-				}
-
+				//salvar no vetor
+				
+				int ranking[] = { 30, 121, 25, 353, 794 };
+				
+				
+				
+				
+				Arquivo.gerarArquivo();
+				
+				File arquivo = new File("Afuga/fases.txt");
 				FileWriter salvar = new FileWriter(arquivo);
-
-				// BufferedWriter escrever = new BufferedWriter(salvar);
-				// escrever.write((int) tempoExecucao, StandardCharsets.ISO_8859_1).toString();
-
-				Files.writeString(null, null, null, null)
-
+				BufferedWriter escrever = new BufferedWriter(salvar);
+								
+				escrever.write(fases + "\n" + Integer.toString(tempoExecucaoFinal));
 				escrever.close();
-				salvar.close();
-
-
+				salvar.close();	
+				
 			} else if (acao == 2) {
 
 				// adicionar leitura de arquivo salvo
@@ -116,7 +115,9 @@ public class Menu {
 
 			} else if (acao == 3) {
 
-				// Adicionar ranking
+				System.out.println("Confira o Nosso Ranking");
+				Arquivo.lerArquivo("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\fases.txt");
+				
 
 			} else if (acao == 4) {
 
