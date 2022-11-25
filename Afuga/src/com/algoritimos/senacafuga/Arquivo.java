@@ -41,7 +41,7 @@ public class Arquivo {
 	
 	public static String lerArquivoSemPrint(String caminho) throws Exception {
 		Path path = Paths.get(caminho);
-		String conteudo = new String(Files.readAllBytes(path), StandardCharsets.ISO_8859_1);
+		String conteudo = new String(Files.readString(path));
 		return conteudo;
 	}
 	

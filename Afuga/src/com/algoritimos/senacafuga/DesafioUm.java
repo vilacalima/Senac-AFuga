@@ -104,7 +104,7 @@ public class DesafioUm {
 				if (!opcao.equals("PEGAR")) {
 					Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\Desafio1\\texto14.txt");
 
-					Credito.credito(false);
+					Credito.credito(false, user);
 				}
 
 				break;

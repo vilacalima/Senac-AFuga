@@ -61,12 +61,12 @@ public class DesafioDois {
 
 		do {
 
-                    Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\SegundaparteIntroducao6.txt");					
-                        
-                       
-			if (ver.equals("VER")) {
-				Bolsa.bolsa(personagem, ver, null);
-		      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\SegundaParteVer7.txt");					
+             Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\SegundaparteIntroducao6.txt");					
+            
+		     Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\SegundaParteVer7.txt");
+		     ver = input.next().toUpperCase();
+		     if (ver.equals("VER")) { 
+		      Bolsa.bolsa(personagem, ver, null);
 			}
 		} while (ver.equals("null"));
 		 

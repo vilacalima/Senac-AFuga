@@ -32,9 +32,8 @@ public class Menu {
 
 			System.out.println("\nEscolha uma opcao numerica\n"
 					+ "\n1 - NOVO JOGO\n"
-					+ "2 - CONTINUAR \n"
-					+ "3 - RANKING \n"
-					+ "4 - SAIR \n");
+					+ "2 - RANKING \n"
+					+ "3 - SAIR \n");
 
 			acao = input.nextInt();
 
@@ -85,7 +84,7 @@ public class Menu {
 				DesafioUm.parteUm(personagem.getNome(), user);
 				DesafioDois.desafioDois(personagem.getNome(), user);
 				DesafioTres.desafioTres(personagem.getNome(), user);
-				DesafioQuatro.historiaDesafioQuatro(user);
+				DesafioQuatro.historiaDesafioQuatro(user, personagem.getClass().toString());
 				
 				// Aqui finaliza a contagem de tempo
 				Long tempoFim = System.currentTimeMillis();
@@ -105,27 +104,22 @@ public class Menu {
 								
 				escrever.write(fases + "\n" + Integer.toString(tempoExecucaoFinal));
 				escrever.close();
-				salvar.close();	
+				salvar.close();
 				
 			} else if (acao == 2) {
-
-				// adicionar leitura de arquivo salvo
-				// se tudo der errado o continuar vai ser a partir de alguma fase
-
-			} else if (acao == 3) {
 
 				System.out.println("Confira o Nosso Ranking");
 				Arquivo.lerArquivo("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\fases.txt");
 				
 
-			} else if (acao == 4) {
+			} else if (acao == 3) {
 
 				System.out.println("Muito obrigado!");
 				System.exit(0);
 
 			}
 
-		} while (acao == 3);
+		} while (acao == 2);
 
 	}
 

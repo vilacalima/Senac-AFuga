@@ -25,7 +25,7 @@ public class DesafioTres {
 
 			case "SAIR":
 				Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioTres\\ConvesOpcaoPular.txt");
-				Credito.credito(false);
+				Credito.credito(false, user);
 				break;
 
 			default:
@@ -188,7 +188,7 @@ public class DesafioTres {
 
 			case "SAIR":
 				Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioTres\\FinalOpcaoPular.txt");
-				Credito.credito(false);
+				Credito.credito(false, user);
 				break;
 
 			default:
