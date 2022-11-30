@@ -1,13 +1,16 @@
 package com.algoritimos.senacafuga;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -19,12 +22,11 @@ public class Menu {
 	 * @throws Exception
 	 */
 	@SuppressWarnings("resource")
-	public static void menuInicial(String user) throws Exception {
+	public static void menuInicial() throws Exception {
 
 		int acao;
 
-		System.out.println("Confira o Nosso Ranking");
-		String fases =  Arquivo.lerArquivoSemPrint("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\fases.txt");
+		String fases =  Arquivo.lerArquivoSemPrint("Afuga\\fases.txt");
 		
 //		String fases =  Arquivo.lerArquivoSemPrint(".\fases.txt");
 		
@@ -76,25 +78,19 @@ public class Menu {
 
 				} while (classe != 1 && classe != 2 && classe != 3);
 
-				// adicionar o salvar arquivo
-
 				// Aqui se inicia a contagem de tempo
 				Long tempoInicio = System.currentTimeMillis();
 
-				DesafioUm.parteUm(personagem.getNome(), user);
-				DesafioDois.desafioDois(personagem.getNome(), user);
-				DesafioTres.desafioTres(personagem.getNome(), user);
-				DesafioQuatro.historiaDesafioQuatro(user, personagem.getClass().toString());
+				DesafioUm.parteUm(personagem.getNome());
+				DesafioDois.desafioDois(personagem.getNome());
+				DesafioTres.desafioTres(personagem.getNome());
+				DesafioQuatro.historiaDesafioQuatro(personagem.getClass().toString());
 				
 				// Aqui finaliza a contagem de tempo
 				Long tempoFim = System.currentTimeMillis();
 				long tempoExecucao = (tempoFim - tempoInicio);
 				int tempoExecucaoFinal = (int) (tempoExecucao / 1000);
 				System.out.println("Voce finalizou o jogo em " + tempoExecucao / 1000 + " segundos");
-
-				//salvar no vetor
-				
-				int ranking[] = { 30, 121, 25, 353, 794 };
 				
 				Arquivo.gerarArquivo();
 				
@@ -108,8 +104,27 @@ public class Menu {
 				
 			} else if (acao == 2) {
 
-				System.out.println("Confira o Nosso Ranking");
-				Arquivo.lerArquivo("C:\\Users\\robso\\workspace\\Senac-AFuga\\Afuga\\fases.txt");
+				System.out.println("Confira o Nosso Ranking, voce consegue finalizar em menos segundo ?");
+								
+				FileReader fr = new FileReader("Afuga\\fases.txt");
+				BufferedReader br = new BufferedReader(fr);
+				
+				ArrayList<Integer> ranking = new ArrayList();
+				
+				//Não conseguimos ordenar o arquivo dentro de um vetor e com o array não funcionava
+				// então usamos o sort para ordenar
+				while (br.ready()) {
+					//lê a proxima linha
+					int linha = Integer.parseInt(br.readLine());
+					ranking.add(linha);
+				}
+				
+				ranking.sort(null);
+				
+				System.out.println(ranking);
+				
+				br.close();
+				fr.close();
 				
 
 			} else if (acao == 3) {

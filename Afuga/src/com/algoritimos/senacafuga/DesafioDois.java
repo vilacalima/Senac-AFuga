@@ -9,32 +9,32 @@ public class DesafioDois {
 	 * @param personagem
 	 * @throws Exception
 	 */
-	public static void desafioDois(String personagem, String user) throws Exception {
+	public static void desafioDois(String personagem) throws Exception {
 		String opcoes;
 		int num = 0;
 		boolean menu = false;
 		
 		do {
-			Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\PrimeiraparteIntroducao1.txt");
-			Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\PrimeiraParteOpcoes2.txt");
+			Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\PrimeiraparteIntroducao1.txt");
+			Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\PrimeiraParteOpcoes2.txt");
 			opcoes = input.next().toUpperCase();
                          
 			switch (opcoes) {
 			case "DICA":
                       
-		      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\OpcaoDica4.txt");
+		      Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\OpcaoDica4.txt");
 				num = input.nextInt();    
 				break;
                                 
 			case "NAO":
-		      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\OpcaoNao5.txt");
+		      Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\OpcaoNao5.txt");
 				num = input.nextInt();
 				break;
 
 			case "AJUDA":
-		      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\OpcaoAjuda3.txt");
-                      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\OpcaoAjudapartedois.txt");
-                      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\OpcaoAjudapartetres.txt");
+		      Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\OpcaoAjuda3.txt");
+                      Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\OpcaoAjudapartedois.txt");
+                      Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\OpcaoAjudapartetres.txt");
 
 				num = input.nextInt();
 				break;
@@ -42,12 +42,12 @@ public class DesafioDois {
 
 			switch (num) {
 			case 133:
-		      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\RespostaCase1.txt");
+		      Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\RespostaCase1.txt");
 				menu = true;
-				acertou(personagem, user);
+				acertou(personagem);
 				break;
 			default:
-		      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\RespostaCase2.txt");				
+		      Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\RespostaCase2.txt");				
                       break;
                       
 			}
@@ -55,15 +55,15 @@ public class DesafioDois {
 		} while (!menu);
 	}
 	
-	public static void acertou(String personagem, String user) throws Exception {
+	public static void acertou(String personagem) throws Exception {
 		String ver = "";
 		String desatar = "";
 
 		do {
 
-             Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\SegundaparteIntroducao6.txt");					
+             Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\SegundaparteIntroducao6.txt");					
             
-		     Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\SegundaParteVer7.txt");
+		     Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\SegundaParteVer7.txt");
 		     ver = input.next().toUpperCase();
 		     if (ver.equals("VER")) { 
 		      Bolsa.bolsa(personagem, ver, null);
@@ -71,10 +71,10 @@ public class DesafioDois {
 		} while (ver.equals("null"));
 		 
 		do {
-		      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\SegundaparteDesatar8.txt");	
+		      Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\SegundaparteDesatar8.txt");	
 			desatar = input.next().toUpperCase();
 			if (desatar.equals("DESATAR")) {
-		      Arquivo.lerArquivo("C:\\Users\\" + user + "\\Senac-AFuga\\Afuga\\src\\falas\\DesafioDois\\Terceiraparte9.txt");			
+		      Arquivo.lerArquivo("Afuga\\src\\falas\\DesafioDois\\Terceiraparte9.txt");			
                         }
 
 		} while (!desatar.equals("DESATAR"));               
